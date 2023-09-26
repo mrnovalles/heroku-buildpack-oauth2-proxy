@@ -2,10 +2,13 @@
 
 set -eo pipefail
 
-OAUTH2_PROXY_VERSION="v7.4.0"
-OAUTH2_PROXY_CHECKSUM="318fc9dd2df3f29bc72c468e07492361332e264c528ab44ed024bcbbcbb55594"
+OAUTH2_PROXY_VERSION="v7.5.1"
+OAUTH2_PROXY_CHECKSUM="dec92a3c2418b3fe94361f407803933c12686f2dce9523a32d5a0fbc7f5f32b3"
 
-BP_DIR="$(cd $(dirname "$0"); pwd)"
+BP_DIR="$(
+	cd $(dirname "$0")
+	pwd
+)"
 BUILD_DIR="$1"
 
 mkdir -p "$BUILD_DIR/bin"
